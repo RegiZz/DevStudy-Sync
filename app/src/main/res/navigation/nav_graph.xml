@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="app.devstudysync.fragments.HomeFragment"
+        android:label="Strona główna" />
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="app.devstudysync.fragments.TasksFragment"
+        android:label="Zadania" />
+
+    <fragment
+        android:id="@+id/knowledgeFragment"
+        android:name="app.devstudysync.fragments.KnowledgeFragment"
+        android:label="Repo wiedzy" />
+
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="app.devstudysync.fragments.StatsFragment"
+        android:label="Statystyki" />
+
+    <!-- Akcje -->
+
+    <action
+        android:id="@+id/action_homeFragment_to_tasksFragment"
+        app:destination="@id/tasksFragment" />
+    <action
+        android:id="@+id/action_homeFragment_to_knowledgeFragment"
+        app:destination="@id/knowledgeFragment" />
+</navigation>
