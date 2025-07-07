@@ -24,6 +24,8 @@ public class HomeFragment extends Fragment {
 
         MaterialButton startButton = view.findViewById(R.id.startButton);
         MaterialButton knowledgeButton = view.findViewById(R.id.knowledgeButton);
+        MaterialButton statsButton = view.findViewById(R.id.statsButton);
+
 
         startButton.setOnClickListener(v -> {
             NavHostFragment.findNavController(this).navigate(R.id.action_homeFragment_to_tasksFragment);
@@ -31,6 +33,10 @@ public class HomeFragment extends Fragment {
 
         knowledgeButton.setOnClickListener(v -> {
             NavHostFragment.findNavController(this).navigate(R.id.action_homeFragment_to_knowledgeFragment);
+        });
+
+        statsButton.setOnClickListener(v -> {
+            NavHostFragment.findNavController(this).navigate(R.id.action_homeFragment_to_statsFragment);
         });
 
     }

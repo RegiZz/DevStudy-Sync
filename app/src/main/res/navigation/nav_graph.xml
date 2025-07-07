@@ -23,6 +23,10 @@
         android:id="@+id/statsFragment"
         android:name="app.devstudysync.fragments.StatsFragment"
         android:label="Statystyki" />
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="app.devstudysync.fragments.AddTaskFragment"
+        />
 
     <!-- Akcje -->
 
@@ -32,4 +36,11 @@
     <action
         android:id="@+id/action_homeFragment_to_knowledgeFragment"
         app:destination="@id/knowledgeFragment" />
+    <action
+        android:id="@+id/action_homeFragment_to_statsFragment"
+        app:destination="@id/statsFragment"
+        />
+    <action
+        android:id="@+id/action_tasksFragment_to_addTaskFragment"
+        app:destination="@id/addTaskFragment"/>
 </navigation>
